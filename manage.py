@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'desafio_python_django.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'desafio_python_django.settings.base')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
