@@ -18,7 +18,9 @@ class SignupView(views.APIView):
             }
             return response.Response(data, status.HTTP_201_CREATED)
 
-        return response.Response(serialzier.errors, status.HTTP_201_CREATED)
+        return response.Response(
+            serialzier.errors, status.HTTP_400_BAD_REQUEST
+        )
 
 
 class MeView(views.APIView):
